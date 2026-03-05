@@ -46,10 +46,16 @@ body>div{
     border:none;
 }
 
-
 section{
-    padding:0px 2rem;
+    padding:1rem 2rem;
     border:1px solid var(--accent-color);
+}
+section:first-of-type>h2{
+    margin-bottom:none;
+}
+
+input{
+    display:block;
 }
 
 #custom-color{
@@ -59,9 +65,10 @@ section{
 input[type=range]{
     accent-color: var(--accent-color);
 }
-input[type=color], button{
+input, button{
     margin-bottom: 1rem;
 }
+
 button{
     width:100%;
     padding: 0.8rem 1rem;

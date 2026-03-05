@@ -1,7 +1,6 @@
 const root = document.documentElement;
 const container = document.getElementById('container');
 
-const button = document.getElementById('grid-size-button');
 const slider = document.getElementById('grid-size-slider');
 
 slider.addEventListener('input', () => {
@@ -9,12 +8,11 @@ slider.addEventListener('input', () => {
     spans.forEach((span) => {
         span.textContent = slider.value;
     });
-});
 
-button.addEventListener('click', () => {
     clearGrid();
     const newGridSize = slider.value;
     createGrid(newGridSize);
+
 });
 
 let color = 'black';
