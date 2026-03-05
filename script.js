@@ -1,10 +1,17 @@
 const root = document.documentElement;
 const container = document.getElementById('container');
 
-let gridSize = 16;
-
 const button = document.getElementById('grid-size-button');
 const slider = document.getElementById('grid-size-slider');
+
+let color = 'black';
+
+const colorInput = document.getElementById('custom-color');
+colorInput.addEventListener('input', () => {
+    color = colorInput.value;
+});
+
+
 
 button.addEventListener('click', () => {
     clearGrid();
@@ -32,11 +39,15 @@ function createGrid(gridSize){
         gridCell.classList.add('grid-cell');
 
         gridCell.addEventListener('mouseover', () =>{
-            gridCell.style.backgroundColor = 'black';
+            colorGridCell(gridCell, color);
         });
 
         container.appendChild(gridCell);
     }
 }
 
-createGrid();
+function colorGridCell(gridCell, color){
+    gridCell.style.backgroundColor = color;
+}
+
+createGrid(16);

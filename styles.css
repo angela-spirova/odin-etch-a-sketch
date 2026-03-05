@@ -1,5 +1,6 @@
 :root{
     --grid-size:16;
+    --color: black;
 }
 
 body{
@@ -31,4 +32,10 @@ body{
 
     /* add this to a separate class later */
     border:1px solid  rgba(0, 0, 0, 0.082);
+}
+
+#controls{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
 }
