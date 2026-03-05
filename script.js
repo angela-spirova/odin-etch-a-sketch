@@ -39,7 +39,6 @@ function clearGrid(){
 
 function createGrid(gridSize){
     root.style.setProperty('--grid-size', gridSize);
-    const gridCellSideLength = container.style.width / gridSize;
     for(let i=0; i<gridSize*gridSize; i++){
         const gridCell = document.createElement('div');
 

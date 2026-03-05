@@ -50,8 +50,8 @@ section{
     padding:1rem 2rem;
     border:1px solid var(--accent-color);
 }
-section:first-of-type>h2{
-    margin-bottom:none;
+section span{
+    margin-bottom:0.5rem;
 }
 
 input{
@@ -67,10 +67,11 @@ input[type=range]{
 }
 input, button{
     margin-bottom: 1rem;
+    box-sizing: border-box;
+    width:100%;
 }
 
 button{
-    width:100%;
     padding: 0.8rem 1rem;
     border:none;
     border-radius: 7px;
@@ -78,6 +79,8 @@ button{
     min-width:fit-content;
 
     cursor:pointer;
+
+    
 }
 
 #random-color{
@@ -88,6 +91,7 @@ button{
 }
 
 label{
-    margin-bottom:0.1rem;
+    display:inline-block;
+    margin-bottom:0.5rem;
 }
 
