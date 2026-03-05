@@ -1,3 +1,7 @@
+:root{
+    --grid-size:16;
+}
+
 body{
     font-family:'Roboto', sans-serif;
 
@@ -12,4 +16,19 @@ body{
     max-width: 600px;
     max-height:600px;
     border:1px solid black;
+
+    display:flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+
+
+.grid-cell{
+    width: calc(100% / var(--grid-size));
+    height: calc(100% / var(--grid-size));
+
+    box-sizing: border-box;
+
+    /* add this to a separate class later */
+    border:1px solid rgb(235, 235, 235);
 }
