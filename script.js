@@ -1,3 +1,5 @@
+createGrid(16);
+
 const root = document.documentElement;
 const container = document.getElementById('container');
 
@@ -64,13 +66,9 @@ function getRandomColor(){
 }
 
 const gridLinesButton = document.getElementById('grid-lines-button');
+
 gridLinesButton.addEventListener('click', () => {
     document.querySelectorAll('.grid-cell').forEach((gridCell) =>{
         gridCell.classList.toggle('borderless-cell');
     });
 });
-function toggleGridLines(){
-    
-}
-
-createGrid(16);
