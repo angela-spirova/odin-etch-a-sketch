@@ -11,7 +11,16 @@ body{
     align-items: center;
 }
 
+body>div{
+    width:80%;
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    gap:5rem;
+}
+
 #container{
+    flex-shrink:0;
     width:90vw;
     height:90vw;
     max-width: 600px;
@@ -35,7 +44,11 @@ body{
 }
 
 #controls{
-    width:100%;
     display:flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    width:10%;
+}
+
+#custom-color{
+    width: 100%;
 }
