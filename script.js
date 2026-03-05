@@ -9,6 +9,10 @@ function createGrid(gridSize=16){
 
         gridCell.classList.add('grid-cell');
 
+        gridCell.addEventListener('mouseover', () =>{
+            gridCell.style.backgroundColor = 'black';
+        });
+
         container.appendChild(gridCell);
     }
 }
