@@ -1,5 +1,3 @@
-createGrid(16);
-
 const root = document.documentElement;
 const container = document.getElementById('container');
 
@@ -72,3 +70,5 @@ gridLinesButton.addEventListener('click', () => {
         gridCell.classList.toggle('borderless-cell');
     });
 });
+
+createGrid(16);
