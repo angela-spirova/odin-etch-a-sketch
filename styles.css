@@ -1,21 +1,21 @@
 :root{
     --grid-size:16;
     --color: black;
+    --accent-color:#66d36f;
 }
 
 body{
     font-family:'Roboto', sans-serif;
-
+    width:80%;
+    margin:0px auto;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
 body>div{
-    width:80%;
     display:flex;
     align-items: start;
-    justify-content: center;
     gap:5rem;
 }
 
@@ -46,12 +46,41 @@ body>div{
     border:none;
 }
 
-#controls{
-    display:flex;
-    flex-direction: column;
-    width:10%;
+
+section{
+    padding:0px 2rem;
+    border:1px solid var(--accent-color);
 }
 
 #custom-color{
     width: 100%;
 }
+
+input[type=range]{
+    accent-color: var(--accent-color);
+}
+input[type=color], button{
+    margin-bottom: 1rem;
+}
+button{
+    width:100%;
+    padding: 0.8rem 1rem;
+    border:none;
+    border-radius: 7px;
+    background-color: var(--accent-color);
+    min-width:fit-content;
+
+    cursor:pointer;
+}
+
+#random-color{
+    background: #eb5757;
+    background: linear-gradient(60deg, rgb(235, 87, 87) 0%, rgba(244, 255, 122, 1) 51%, rgba(126, 247, 211, 1) 100%);
+    border:none;
+    
+}
+
+label{
+    margin-bottom:0.1rem;
+}
+

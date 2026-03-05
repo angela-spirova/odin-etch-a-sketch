@@ -15,18 +15,26 @@
 <body>
     <h1>Etch-a-sketch</h1>
     <div>
+        
         <div id="controls">
-            <h2>Grid size</h2>
-            <input id="grid-size-slider" name="grid-size-slider" type="range" min="1" max="100" value="16">
-            <p><span class="slider-value">16</span>x<span class="slider-value">16</span></p>
-            <button id="grid-size-button">Apply</button>
             
-            <h2>Color</h2>
-            <label for="custom-color">Custom</label>
-            <br>
-            <input id="custom-color" name="custom-color" type="color">
-            <button id="random-color">Randomize</button>
-            <button id="grid-lines-button">Toggle grid lines</button>
+            <section>
+                <h2>Grid size</h2>
+                <input id="grid-size-slider" name="grid-size-slider" type="range" min="2" max="100" value="16">
+                <p><span class="slider-value">16</span>x<span class="slider-value">16</span></p>
+                <button id="grid-size-button">Apply</button>
+            </section>
+            <section>
+                <h2>Color</h2>
+                <label for="custom-color">Custom:</label>
+                <input id="custom-color" name="custom-color" type="color">
+                <button id="random-color">Randomize</button>
+            </section>
+            <section>
+                <h2>Other</h2>
+                <button id="grid-lines-button">Toggle grid lines</button>
+            </section>
+            
         </div>
         
         <div id="container"></div>
