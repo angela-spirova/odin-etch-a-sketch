@@ -39,8 +39,11 @@ body>div{
 
     box-sizing: border-box;
 
-    /* add this to a separate class later */
     border:1px solid  rgba(0, 0, 0, 0.082);
+}
+
+.grid-cell.borderless-cell{
+    border:none;
 }
 
 #controls{

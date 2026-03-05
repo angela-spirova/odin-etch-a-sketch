@@ -66,4 +66,14 @@ function getRandomColor(){
     return `hsl(${Math.random()*255}, 100%, 50%)`;
 }
 
+const gridLinesButton = document.getElementById('grid-lines-button');
+gridLinesButton.addEventListener('click', () => {
+    document.querySelectorAll('.grid-cell').forEach((gridCell) =>{
+        gridCell.classList.toggle('borderless-cell');
+    });
+});
+function toggleGridLines(){
+    
+}
+
 createGrid(16);
